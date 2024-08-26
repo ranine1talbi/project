@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto sans-serif;
+
+}
+.title h1{
+    font-size: 50px;
+    color: #fff;
+    text-shadow: 0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 42px #e6127c,
+    0 0 77px #e6127c,
+    0 0 100px #e61212;
+    text-align: center;
+    
+
+}
+.title h2{
+    color: #fff;
+    text-align: center;
+    font-size:50px;
+}
+.content-title h2{
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+}
+
+h5 {
+    color: #fff;
+}
+p {
+    color: #fff;
+}
+.image-container img{
+   width: 100%;
+margin-bottom: 0;
+background-size: cover;
+}
+h2{
+    color: #fff;
+}
+.container{
+    display: flex;
+    justify-content: center;
+ 
+    margin-top: 100PX;
+}
+.image-container{
+    width: 325px;
+    background-color: #5b0707;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0,0.2);
+    margin: 20px;
+}
+/* Keyframes for the fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Keyframes for the hover effect */
+@keyframes hoverScale {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.05);
+    }
+}
+
+.image-container img {
+    width: 100%;
+    height: auto; /* Ensure the image maintains its aspect ratio */
+    margin-bottom: 0;
+}
+
+h2 {
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem; /* Use relative units for better responsiveness */
+}
+
+.image-container {
+    width: 325px;
+    background-color: #5b0707;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    animation: fadeIn 1s ease-out; /* Apply fade-in animation */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.image-container:hover {
+    animation: hoverScale 0.3s ease; /* Apply hover scale animation */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+}
+
+    
+   
+
+  
+
