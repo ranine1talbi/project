@@ -48,7 +48,7 @@
 }
 
 /* Effet d'animation au survol */
-./* Style de base pour le bouton lien */
+/* Style de base pour le bouton lien */
 .content-title a {
     display: inline-block;      /* Pour appliquer des dimensions et du padding */
     background-color: #e74c3c;  /* Couleur de fond rouge */
@@ -172,5 +172,5 @@ ul li a:hover{
     
    
 
-  
+}
 
