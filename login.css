@@ -38,11 +38,7 @@ body {
     z-index: 100;
 }
 
-.nav-logo p {
-    color: white;
-    font-size: 25px;
-    font-weight: 600;
-}
+
 
 .nav-menu ul {
     display: flex;

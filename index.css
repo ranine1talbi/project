@@ -1,69 +1,102 @@
 @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,400;1,500;1,700;1,900&display=swap');
 
-/* Styles de base */
-* {
+
+*{
     background-color: black;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-}
+    font-family: roboto sans-serif;
 
-/* Styles pour le titre principal */
-.title h1 {
+}
+.title h1{
     font-size: 50px;
     color: #fff;
     text-shadow: 0 0 7px #fff,
-                 0 0 10px #fff,
-                 0 0 42px #e6127c,
-                 0 0 77px #e6127c,
-                 0 0 100px #e61212;
+    0 0 10px #fff,
+    0 0 42px #e6127c,
+    0 0 77px #e6127c,
+    0 0 100px #e61212;
     text-align: center;
-}
+    
 
-/* Styles pour les sous-titres */
-.title h2,
-.content-title h2 {
+}
+.title h2{
     color: #fff;
     text-align: center;
-    font-size: 50px;
+    font-size:50px;
+}
+.content-title h2{
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+}
+.content-title a {
+    display: block;
+    width: 130px;
+    height: 40px;
+    font-weight: 500;
+    background: rgba(255, 255, 255, 0.4);
+    border: none;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 40px; /* Alignement vertical du texte */
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
-/* Styles pour le texte général */
-h5, p {
+.content-title a:hover {
+    background: rgba(255, 255, 255, 0.3);
+    color: #12aae6; /* Change la couleur du texte au survol */
+}
+
+.content-title a.active {
+    border-bottom: 2px solid #fff;
+}
+
+.content-title a.white-btn {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.content-title a.white-btn:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+
+
+
+h5 {
     color: #fff;
 }
-
-/* Styles pour les images */
-.image-container img {
-    width: 100%;
-    height: auto; /* Maintien du ratio d'aspect */
-    margin-bottom: 0;
-    background-size: cover;
+p {
+    color: #fff;
 }
-
-/* Styles pour le conteneur */
-.container {
+.image-container img{
+   width: 100%;
+margin-bottom: 0;
+background-size: cover;
+object-fit: cover;
+}
+h2{
+    color: #fff;
+}
+.container{
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    margin-top: 2rem; /* Unités relatives pour une meilleure réactivité */
+ 
+    margin-top: 100PX;
 }
-
-/* Styles pour chaque conteneur d'image */
-.image-container {
+.image-container{
     width: 325px;
     background-color: #5b0707;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0,0.2);
     margin: 20px;
-    position: relative; /* Nécessaire pour le bouton "J'adore" */
-    animation: fadeIn 1s ease-out; /* Animation de fondu en entrée */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition pour l'effet au survol */
 }
-
-/* Animation de fondu en entrée */
+/* Keyframes for the fade-in effect */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -73,7 +106,7 @@ h5, p {
     }
 }
 
-/* Animation de mise à l'échelle au survol */
+/* Keyframes for the hover effect */
 @keyframes hoverScale {
     from {
         transform: scale(1);
@@ -83,20 +116,37 @@ h5, p {
     }
 }
 
-/* Effet au survol de l'image */
-.image-container:hover {
-    animation: hoverScale 0.3s ease; /* Animation d'agrandissement au survol */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Ombre plus prononcée au survol */
-}
-/* Style pour le bouton de like */
-.like-btn {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    gap: 8px; /* Espacement entre l'icône et le compteur */
-    color: white;
+.image-container img {
+    width: 100%;
+    height: auto; /* Ensure the image maintains its aspect ratio */
+    margin-bottom: 0;
 }
 
+h2 {
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem; /* Use relative units for better responsiveness */
+}
+
+.image-container {
+    
+    animation: fadeIn 1s ease-out; /* Apply fade-in animation */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.image-container:hover {
+    animation: hoverScale 0.3s ease; /* Apply hover scale animation */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+}
+.content_image{
+    width: 100%;
+    height: 100%;
+}
+    
 
 
 /* Couleur du cœur quand il est aimé (rouge) */
