@@ -31,6 +31,46 @@
     text-align: center;
     font-size: 40px;
 }
+.content-title a{
+    /* Style de base pour le bouton lien */
+
+    display: inline-block;      /* Pour appliquer des dimensions et du padding */
+    background-color: #e74c3c;  /* Couleur de fond rouge */
+    color: white;               /* Texte en blanc */
+    text-align: center;         /* Centrage du texte */
+    padding: 15px 30px;         /* Espacement intérieur */
+    font-size: 16px;            /* Taille de la police */
+    border-radius: 5px;         /* Coins arrondis */
+    text-decoration: none;      /* Pas de soulignement */
+    cursor: pointer;            /* Curseur de la souris */
+    transition: all 0.3s ease;  /* Transition fluide */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre portée */
+}
+
+/* Effet d'animation au survol */
+/* Style de base pour le bouton lien */
+.content-title a {
+    display: inline-block;      /* Pour appliquer des dimensions et du padding */
+    background-color: #e74c3c;  /* Couleur de fond rouge */
+    color: white;               /* Texte en blanc */
+    text-align: center;         /* Centrage du texte */
+    padding: 15px 30px;         /* Espacement intérieur */
+    font-size: 16px;            /* Taille de la police */
+    border-radius: 5px;         /* Coins arrondis */
+    text-decoration: none;      /* Pas de soulignement */
+    cursor: pointer;            /* Curseur de la souris */
+    transition: all 0.3s ease;  /* Transition fluide */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    justify-items: center; /* Ombre portée */
+}
+
+/* Effet d'animation au survol */
+.content-title a:hover {
+    background-color: #c0392b; /* Couleur de fond plus foncée */
+    transform: scale(1.1);     /* Agrandissement du bouton */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Ombre plus marquée */
+}
+
 
 h5 {
     color: #fff;
@@ -111,8 +151,26 @@ h2 {
     width: 100%;
     height: 100%;
 }
+.nav ul{
+    display: flex;
+    margin-left: 70%;
+    list-style: none;
+}
+.nav ul li  a{
+    list-style-type: none;
+    margin-right: 0.8rem 1.5rem ;
+    display: inline-block;
+    font-weight: 500;
+    padding: 10px 16px;
+    color: #e61212;
+    font-size: 20px;
+}
+
+ul li a:hover{
+    color: rgb(236, 226, 226);
+    
     
    
 
-  
+}
 
