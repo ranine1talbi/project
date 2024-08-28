@@ -85,18 +85,15 @@
 /* Effet d'animation au survol */
 /* Style de base pour le bouton lien */
 .content-title a {
-    display: inline-block;      /* Pour appliquer des dimensions et du padding */
-    background-color: #e74c3c;  /* Couleur de fond rouge */
-    color: white;               /* Texte en blanc */
-    text-align: center;         /* Centrage du texte */
-    padding: 15px 30px;         /* Espacement intérieur */
-    font-size: 16px;            /* Taille de la police */
-    border-radius: 5px;         /* Coins arrondis */
-    text-decoration: none;      /* Pas de soulignement */
-    cursor: pointer;            /* Curseur de la souris */
-    transition: all 0.3s ease;  /* Transition fluide */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    justify-items: center; /* Ombre portée */
+    width: 130px;
+    height: 60px;
+    font-weight: 500;
+    font-size: 30px;
+    background: rgba(255, 255, 255, 0.4);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: .3s ease;
 }
 
 /* Effet d'animation au survol */
