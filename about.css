@@ -203,11 +203,3 @@ ul li a:hover{
     color: rgb(236, 226, 226);
     
 }
-
-
-
-/* Couleur du cœur quand il est aimé (rouge) */
-.liked .heart-icon {
-    color: rgb(227, 11, 11); /* Couleur quand aimé (rouge) */
-
-}
